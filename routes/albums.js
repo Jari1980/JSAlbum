@@ -1,6 +1,6 @@
 const express = require("express");
-const router = express = express.Router();
-const Album = require("./models/Album");
+const router = express.Router();
+const Album = require("../models/Album");
 
 //Get all albums
 router.get("/", async (req, res, next) => {
@@ -48,3 +48,5 @@ router.delete("/:id", async (req, res, next) => {
         next(err);
     }
 });
+
+module.exports = router;
