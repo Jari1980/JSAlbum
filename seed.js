@@ -1,4 +1,4 @@
-const Album = require("./models/Album");
+const Album = require("./models/Album")
 
 async function seedAlbums(){
     const count = await Album.countDocuments();
